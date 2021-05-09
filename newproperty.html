@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>New Property Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6 class="center-align">Add New Property Form</h6>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="label" type="text"
+                                class="validate"><label for="label">label</label><span id="span-label"
+                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
+                                Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="area" type="text"
+                                class="validate"><label for="area">area</label><span id="span-area" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m12 l12 nearByPlacesStyle">
+                        <p>
+                            Pricing Preferences :-
+                            <br />
+                            <span class="red-text">
+                                <span class="invalid-value-marker"
+                                    id="invalid-value-marker-pricingPreference"></span><br />
+                                <span class="invalid-value-marker" id="invalid-value-marker-pricingRent"></span><br />
+                                <span class="invalid-value-marker"
+                                    id="invalid-value-marker-pricingDeposit"></span><br />
+                            </span>
+                        </p>
+                        <div>
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="pricingPreference" placeholder="Preference" type="text">
+                                    <label>Preference</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="pricingRent" placeholder="Rent" type="text">
+                                    <label>Rent</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="pricingDeposit" placeholder="Deposit" type="text">
+                                    <label>Deposit</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="add(this)" type="button"><i class="material-icons prefix">add</i></button>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="bedrooms"
+                                type="text" class="validate"><label for="bedrooms">No. of Bedrooms</label><span
+                                id="span-bedrooms" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="bathrooms"
+                                type="text" class="validate"><label for="bathrooms">No. of Bathrooms</label><span
+                                id="span-bathrooms" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <p>
+                            Amenities and Appliances Available :-
+                        </p>
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-1">
+                                    <input id="amenitiesAndAppliances-1" name="amenitiesAndAppliances" value="TV"
+                                        type="checkbox" class="filled-in" />
+                                    <span>TV</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-2">
+                                    <input id="amenitiesAndAppliances-2" name="amenitiesAndAppliances" value="AC"
+                                        type="checkbox" class="filled-in" />
+                                    <span>AC</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-3">
+                                    <input id="amenitiesAndAppliances-3" name="amenitiesAndAppliances" value="BALCONY"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Balcony</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-4">
+                                    <input id="amenitiesAndAppliances-4" name="amenitiesAndAppliances" value="WIFI"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Wi-Fi</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="furnishing">
+                                <option value="NA" selected>Not Applicable</option>
+                                <option value="FULLY">Fully Furnished</option>
+                                <option value="SEMI">Semi Furnished</option>
+                                <option value="NOT">Not Furnished</option>
+                            </select>
+                            <label for="furnishing">Furnisihing :</label>
+                            <span id="span-furnishing" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="rentOrBuy">
+                                <option value="RENT" selected>Rent</option>
+                                <option value="SELL">Sell</option>
+                            </select>
+                            <label for="rentOrBuy">To Rent or Sell ?</label>
+                            <span id="span-rentOrBuy" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="salePrice"
+                                type="text" class="validate"><label for="salePrice">salePrice</label><span
+                                id="span-salePrice" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksKitchen"
+                                type="text" class="validate"><label
+                                for="photoLinksKitchen">photoLinksKitchen</label><span id="span-photoLinksKitchen"
+                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
+                                Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksRooms"
+                                type="text" class="validate"><label for="photoLinksRooms">photoLinksRooms</label><span
+                                id="span-photoLinksRooms" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksHall"
+                                type="text" class="validate"><label for="photoLinksHall">photoLinksHall</label><span
+                                id="span-photoLinksHall" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksOthers"
+                                type="text" class="validate"><label for="photoLinksOthers">photoLinksOthers</label><span
+                                id="span-photoLinksOthers" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="contactDetails"
+                                type="text" class="validate"><label for="contactDetails">contactDetails</label><span
+                                id="span-contactDetails" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4 offset-l2 center-align">
+                        <button id="cancelButton" class="btn waves-effect waves-light blue darken-3">Cancel
+                            <i class="material-icons right">close</i>
+                        </button>
+                    </div>
+                    <div class=" col s12 hide-on-med-and-up">
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l4 center-align">
+                        <button id="submitButton" class="btn waves-effect waves-light blue darken-3" type="submit">Add
+                            Property
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/newproperty.js"></script>
+
+</body>
+
+</html>

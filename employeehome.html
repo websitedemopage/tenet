@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Employee Home Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6 class="center-align">Employee Dashboard</h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="row-employee-employeeId removeFromScreen">
+                            <td>Employee Id</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-employee-employeeId"></td>
+                        </tr>
+                        <tr class="row-employee-firstName removeFromScreen">
+                            <td>First Name</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-employee-firstName"></td>
+                        </tr>
+                        <tr class="row-employee-lastName removeFromScreen">
+                            <td>Last Name</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-employee-lastName"></td>
+                        </tr>
+                        <tr class="row-employee-phoneNumberOne removeFromScreen">
+                            <td>Phone Number</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-employee-phoneNumberOne"></td>
+                        </tr>
+                        <tr class="row-employee-emailId removeFromScreen">
+                            <td>Email Id</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-employee-emailId"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l4 center-align offset-l2">
+                    <a class="waves-effect waves-light btn-large blue addNewBuilderDetailsButton"><i class="material-icons left">add</i>Add New
+                        Builder</a>
+                </div>
+                <div class=" col s12 hide-on-med-and-up">
+                    &nbsp;
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <a class="waves-effect waves-light btn-large blue signOutButton">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul id="buildersListElement" class="collection with-header">
+                        <li class="collection-item">
+                            <div></div> Loading Builders List ....
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/employeehome.js"></script>
+
+</body>
+
+</html>

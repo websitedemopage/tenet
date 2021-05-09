@@ -1,0 +1,17 @@
+body {
+  overflow-x: hidden !important;
+}
+
+.pageContentWhileLoading {
+  display: none;
+}
+
+.removeFromScreen {
+  display: none;
+}
+
+.nearByPlacesStyle {
+  background-color: rgb(205, 221, 221);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

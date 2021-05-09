@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>New Builder Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6 class="center-align">Add New Builder Form</h6>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Builder Name</label>
+                            <span id="span-name" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder Name Above</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="emailId" type="email" class="validate">
+                            <label for="emailId">Builder Email Id</label>
+                            <span id="span-emailId" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter mail Id Above</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">call</i>
+                            <input id="phoneNo" type="tel" class="validate" pattern="[0-9]{10}">
+                            <label for="phoneNo">Phone Number</label>
+                            <span id="span-phoneNo" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Phone No Above</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">location_city</i>
+                            <input id="officeCity" type="text" class="validate">
+                            <label for="officeCity">City</label>
+                            <span id="span-officeCity" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Office City Name Above</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">domain</i>
+                            <input id="officeRegion" type="text" class="validate">
+                            <label for="officeRegion">Region</label>
+                            <span id="span-officeRegion" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Office Region Name Above</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">business</i>
+                            <input id="officeLocality" type="text" class="validate">
+                            <label for="officeLocality">Locality</label>
+                            <span id="span-officeLocality" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Office Locality Name Above</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">filter_hdr</i>
+                            <input id="logoLink" type="url" class="validate">
+                            <label for="logoLink">URL of Builder's Logo</label>
+                            <span id="span-logoLink" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Logo's URL</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">camera_alt</i>
+                            <input id="backgroundImage" type="url" class="validate">
+                            <label for="backgroundImage">Profile Picture URL</label>
+                            <span id="span-backgroundImage" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's profile picture URL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">location_on</i>
+                            <input id="mapLink" type="url" class="validate">
+                            <label for="mapLink">Office Location URL</label>
+                            <span id="span-mapLink" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Office Location URL</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">desktop_windows</i>
+                            <input id="websiteLink" type="url" class="validate">
+                            <label for="websiteLink">Website URL</label>
+                            <span id="span-websiteLink" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Builder's Website URL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4 offset-l2 center-align">
+                        <button id="cancelButton" class="btn waves-effect waves-light blue darken-3">Cancel
+                            <i class="material-icons right">close</i>
+                        </button>
+                    </div>
+                    <div class=" col s12 hide-on-med-and-up">
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l4 center-align">
+                        <button id="submitButton" class="btn waves-effect waves-light blue darken-3" type="submit">Add
+                            Builder
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/newbuilder.js"></script>
+
+</body>
+
+</html>

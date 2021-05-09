@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Property Details Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6 class="center-align">Property Details Page</h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="row-apartment-apartmentId removeFromScreen">
+                            <td>Apartment Id</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-apartmentId"></td>
+                        </tr>
+                        <tr class="row-apartment-label removeFromScreen">
+                            <td>Apartment Label</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-label"></td>
+                        </tr>
+                        <tr class="row-apartment-contactDetails removeFromScreen">
+                            <td>Contact Details</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-contactDetails"></td>
+                        </tr>
+                        <tr class="row-apartment-bedrooms removeFromScreen">
+                            <td>No. of Bedrooms</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-bedrooms"></td>
+                        </tr>
+                        <tr class="row-apartment-bathrooms removeFromScreen">
+                            <td>No. of Bathrooms</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-bathrooms"></td>
+                        </tr>
+                        <tr class="row-apartment-area removeFromScreen">
+                            <td>Area(in Sq.ft)</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-area"></td>
+                        </tr>
+                        <tr class="row-apartment-buildingId removeFromScreen">
+                            <td>Building Id</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-buildingId"></td>
+                        </tr>
+                        <tr class="row-apartment-buildingName removeFromScreen">
+                            <td>Building Name</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-buildingName"></td>
+                        </tr>
+                        <tr class="row-apartment-salePrice removeFromScreen">
+                            <td>Sale Price</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-salePrice"></td>
+                        </tr>
+                        <tr class="row-apartment-furnishing removeFromScreen">
+                            <td>Furnishing</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-furnishing"></td>
+                        </tr>
+                        <tr class="row-apartment-builderId removeFromScreen">
+                            <td>Builder Id</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-builderId"></td>
+                        </tr>
+                        <tr class="row-apartment-builderName removeFromScreen">
+                            <td>Builder Name</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-builderName"></td>
+                        </tr>
+                        <tr class="row-apartment-amenitiesAndAppliances removeFromScreen">
+                            <td>Amenities And Appliances</td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td class="value-apartment-amenitiesAndAppliances"></td>
+                        </tr>
+                    </table>
+                    <div id="apartment-pricingDataValues" class="removeFromScreen">
+                        &nbsp;<br />
+                        <h6>Pricing Data :-</h6>
+                        <div id="pricingDataValues"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    &nbsp;<br />&nbsp;<br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn-large blue homeButton"><i class="material-icons left">home</i>Home</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    &nbsp;<br/>
+                    &nbsp;<br/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/propertyhome.js"></script>
+
+</body>
+
+</html>

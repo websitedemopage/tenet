@@ -1,4 +1,32 @@
 var submitButton = document.getElementById("submitButton");
+var signInWithGoogleButton = document.getElementById("signInWithGoogleButton");
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var authToken = urlParams.get('authToken');
+if (authToken) {
+    window.localStorage.removeItem("tenetEmployeeAuthToken");
+    sendToServer({
+            method: "POST",
+            headers: {
+                "x-access-token": authToken,
+            },
+        },
+        CONNECTION_DATA.TENET_DOMAIN +
+        CONNECTION_DATA.TENET_EMPLOYEE_TOKEN_ENDPOINT,
+        "",
+        function (response) {
+            var responseObj = JSON.parse(response);
+            window.localStorage.setItem("tenetEmployeeAuthToken", responseObj.authToken);
+            window.location = CONNECTION_DATA.TENET_EMPLOYEE_REDIRECT_URL_AFTER_SIGN_ON;
+        },
+        function (response) {
+            console.log("ERROR : " + response);
+            var responseObj = JSON.parse(response);
+            swal("Sorry!..", responseObj.errormessage, "error");
+        }
+    );
+}
 
 var employeeAuthToken = window.localStorage.getItem("tenetEmployeeAuthToken");
 if (employeeAuthToken) {
@@ -52,5 +80,14 @@ if (submitButton) {
             swal("Sorry!..", responseObj.errormessage, "error");
             submitButton.disabled = false;
         });
+    });
+}
+
+if (signInWithGoogleButton) {
+    signInWithGoogleButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        signInWithGoogleButton.disabled = true;
+        var callBackUrl = new URL(CONNECTION_DATA.TENET_EMPLOYEE_LOGIN_PAGE, window.location);
+        window.location = CONNECTION_DATA.TENET_DOMAIN + CONNECTION_DATA.TENET_GOOGLE_SIGNIN_ENDPOINT + "?redirectUrl=" + callBackUrl.href;
     });
 }

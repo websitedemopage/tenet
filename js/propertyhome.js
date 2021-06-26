@@ -18,6 +18,9 @@ function fillApartmentProfileFields(data){
         for(i=0;i<data.pricing.length;++i){
             dataStr += "<span>For <b>"+data.pricing[i].preference+"</b> the monthly rent is <b>"+data.pricing[i].rent+"</b> and deposit required is <b>"+data.pricing[i].deposit+"</b><br/>";
         }
+        if(dataStr.trim().length<=0){
+            return;
+        }
         document.getElementById("pricingDataValues").innerHTML = dataStr;
         document.getElementById("apartment-pricingDataValues").classList.remove("removeFromScreen");
     }

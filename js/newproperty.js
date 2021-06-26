@@ -3,7 +3,7 @@ const queryString = window.location.search;
 var submitButton = document.getElementById("submitButton");
 var cancelButton = document.getElementById("cancelButton");
 
-function pricingPreferenceElementsGroup(){
+function pricingPreferenceElementsGroup() {
     return "<div class=\"row\"><div class=\"input-field col s12 m6 l4\"><input class=\"pricingPreference\" placeholder=\"Preference\" type=\"text\"><label>Preference</label></div><div class=\"input-field col s12 m6 l4\"><input class=\"pricingRent\" placeholder=\"Rent\" type=\"text\"><label>Rent</label></div><div class=\"input-field col s12 m6 l4\"><input class=\"pricingDeposit\" placeholder=\"Deposit\" type=\"text\"><label>Deposit</label></div></div>";
 }
 
@@ -11,6 +11,24 @@ function add(buttonNode) {
     var parentNode = buttonNode.parentNode;
     var siblingNode = parentNode.previousElementSibling;
     siblingNode.innerHTML += pricingPreferenceElementsGroup();
+}
+
+function changeType(dropDownBoxNode) {
+    var visible = "Rent";
+    var invisible = "Sale";
+    if (dropDownBoxNode.value == "Sale") {
+        invisible = "Rent";
+        visible = "Sale";
+    }
+    var selectedTypeNodes = document.getElementsByClassName("for" + invisible + "Data");
+    var i = 0;
+    for (i = 0; i < selectedTypeNodes.length; ++i) {
+        selectedTypeNodes[i].style.display = "none";
+    }
+    selectedTypeNodes = document.getElementsByClassName("for" + visible + "Data");
+    for (i = 0; i < selectedTypeNodes.length; ++i) {
+        selectedTypeNodes[i].style.display = "block";
+    }
 }
 
 const getBuildingId = function () {
@@ -47,7 +65,7 @@ const readFromMultipleTextFields = function (fieldName) {
         return undefined;
     }
     var data = [];
-    for(var f=0;f<textboxes.length;++f){
+    for (var f = 0; f < textboxes.length; ++f) {
         data.push(textboxes[f].value);
     }
     return data.join(",");
@@ -70,7 +88,13 @@ const fieldsToSend = {
     "photoLinksRooms": noChange,
     "photoLinksHall": noChange,
     "photoLinksOthers": noChange,
-    "contactDetails": noChange
+    "contactDetails": noChange,
+    "configuration": noChange,
+    "salePriceUnit": noChange,
+    "status": noChange,
+    "ownerName": noChange,
+    "alternatePhoneNumber": noChange,
+    "ownerPlaceOfResidence": noChange
 };
 
 function readDataToSend() {

@@ -7,7 +7,7 @@
     <title>New Property Page</title>
 
     <!-- CSS  -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -46,7 +46,258 @@
                                 class="validate"><label for="area">area</label><span id="span-area" class="helper-text"
                                 data-error="Invalid Data" data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
-                    <div class="col s12 m12 l12 nearByPlacesStyle">
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="rentOrBuy" onchange="changeType(this)">
+                                <option value="Rent" selected>Rent</option>
+                                <option value="Sale">Sale</option>
+                            </select>
+                            <label for="rentOrBuy">To Sell or Rent ?</label>
+                            <span id="span-rentOrBuy" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="configuration">
+                                <option value="1" selected>1 BHK</option>
+                                <option value="2">2 BHK</option>
+                                <option value="3">3 BHK</option>
+                                <option value="4">4 BHK</option>
+                                <option value="5">5 BHK</option>
+                                <option value="6">6 BHK</option>
+                            </select>
+                            <label for="configuration">Configuration</label>
+                            <span id="span-configuration" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="furnishing">
+                                <option value="Fully">Fully Furnished</option>
+                                <option value="Semi">Semi Furnished</option>
+                                <option selected value="Not">Not Furnished</option>
+                            </select>
+                            <label for="furnishing">Furnisihing :</label>
+                            <span id="span-furnishing" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="bathrooms">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <label for="bathrooms">No. of Bathrooms</label>
+                            <span id="span-bathrooms" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12">
+                        <h5>HOUSE AMENITIES</h5>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <p>
+                            Amenities and Appliances Available :-
+                        </p>
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-1">
+                                    <input id="amenitiesAndAppliances-1" name="amenitiesAndAppliances" value="TV"
+                                        type="checkbox" class="filled-in" />
+                                    <span>TV</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-2">
+                                    <input id="amenitiesAndAppliances-2" name="amenitiesAndAppliances" value="AC"
+                                        type="checkbox" class="filled-in" />
+                                    <span>AC</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-3">
+                                    <input id="amenitiesAndAppliances-3" name="amenitiesAndAppliances" value="Bed"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Bed</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-4">
+                                    <input id="amenitiesAndAppliances-4" name="amenitiesAndAppliances" value="Mattress"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Mattress</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-5">
+                                    <input id="amenitiesAndAppliances-5" name="amenitiesAndAppliances" value="Wardrobe"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Wardrobe</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-6">
+                                    <input id="amenitiesAndAppliances-6" name="amenitiesAndAppliances" value="Geyser"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Geyser</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-7">
+                                    <input id="amenitiesAndAppliances-7" name="amenitiesAndAppliances" value="Washer"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Washer</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-8">
+                                    <input id="amenitiesAndAppliances-8" name="amenitiesAndAppliances" value="Stove"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Stove</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-9">
+                                    <input id="amenitiesAndAppliances-9" name="amenitiesAndAppliances" value="Purifier"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Purifier</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-10">
+                                    <input id="amenitiesAndAppliances-10" name="amenitiesAndAppliances" value="Oven"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Oven</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-11">
+                                    <input id="amenitiesAndAppliances-11" name="amenitiesAndAppliances" value="Sofa"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Sofa</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-12">
+                                    <input id="amenitiesAndAppliances-12" name="amenitiesAndAppliances" value="Fridge"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Fridge</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-13">
+                                    <input id="amenitiesAndAppliances-13" name="amenitiesAndAppliances" value="Internet"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Internet</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-14">
+                                    <input id="amenitiesAndAppliances-14" name="amenitiesAndAppliances" value="Table"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Table</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-15">
+                                    <input id="amenitiesAndAppliances-15" name="amenitiesAndAppliances" value="Modular"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Modular</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-16">
+                                    <input id="amenitiesAndAppliances-16" name="amenitiesAndAppliances"
+                                        value="Furniture" type="checkbox" class="filled-in" />
+                                    <span>Furniture</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-17">
+                                    <input id="amenitiesAndAppliances-17" name="amenitiesAndAppliances" value="Cupboard"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Cupboard</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-18">
+                                    <input id="amenitiesAndAppliances-18" name="amenitiesAndAppliances" value="Bathtub"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Bathtub</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-19">
+                                    <input id="amenitiesAndAppliances-19" name="amenitiesAndAppliances" value="Balcony"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Balcony</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-20">
+                                    <input id="amenitiesAndAppliances-20" name="amenitiesAndAppliances" value="DTH"
+                                        type="checkbox" class="filled-in" />
+                                    <span>DTH</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-21">
+                                    <input id="amenitiesAndAppliances-21" name="amenitiesAndAppliances" value="Shelf"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Shelf</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenitiesAndAppliances-22">
+                                    <input id="amenitiesAndAppliances-22" name="amenitiesAndAppliances" value="Utensils"
+                                        type="checkbox" class="filled-in" />
+                                    <span>Utensils</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 forSaleData">
+                        <h5>SALE DETAILS</h5>
+                    </div>
+                    <div class="col s12 m12 l12 forSaleData">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="salePrice"
+                                type="text" class="validate"><label for="salePrice">Sale Price</label><span
+                                id="span-salePrice" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6 forSaleData">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="salePriceUnit">
+                                <option value="Lakh" selected>Lakh</option>
+                                <option value="Crore">Crore</option>
+                            </select>
+                            <label for="salePriceUnit">Sale Price in Lakh/Crore ?</label>
+                            <span id="span-salePriceUnit" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 forRentData">
+                        <h5>RENTAL DETAILS</h5>
+                    </div>
+                    <div class="col s12 m12 l12 nearByPlacesStyle  forRentData">
                         <p>
                             Pricing Preferences :-
                             <br />
@@ -78,116 +329,92 @@
                             <button onclick="add(this)" type="button"><i class="material-icons prefix">add</i></button>
                         </p>
                     </div>
+                    <div class="col s12 m12 l12">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="status">
+                                <option value="Available" selected>Available</option>
+                                <option value="Sold Out">Sold Out</option>
+                                <option value="Occupied">Occupied</option>
+                            </select>
+                            <label for="status">Availability :</label>
+                            <span id="span-status" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12">
+                        <h5>OWNER DETAILS</h5>
+                    </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="bedrooms"
-                                type="text" class="validate"><label for="bedrooms">No. of Bedrooms</label><span
-                                id="span-bedrooms" class="helper-text" data-error="Invalid Data"
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="ownerName"
+                                type="text" class="validate"><label for="ownerName">Owner Name</label><span
+                                id="span-ownerName" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="bathrooms"
-                                type="text" class="validate"><label for="bathrooms">No. of Bathrooms</label><span
-                                id="span-bathrooms" class="helper-text" data-error="Invalid Data"
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="contactDetails"
+                                type="text" class="validate"><label for="contactDetails">Contact Number</label><span
+                                id="span-contactDetails" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="alternatePhoneNumber" type="text" class="validate"><label
+                                for="alternatePhoneNumber">Alternate Phone Number</label><span
+                                id="span-alternatePhoneNumber" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m12 l12">
-                        <p>
-                            Amenities and Appliances Available :-
-                        </p>
-                        <div class="row">
-                            <div class="col s12 m6 l3">
-                                <label for="amenitiesAndAppliances-1">
-                                    <input id="amenitiesAndAppliances-1" name="amenitiesAndAppliances" value="TV"
-                                        type="checkbox" class="filled-in" />
-                                    <span>TV</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenitiesAndAppliances-2">
-                                    <input id="amenitiesAndAppliances-2" name="amenitiesAndAppliances" value="AC"
-                                        type="checkbox" class="filled-in" />
-                                    <span>AC</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenitiesAndAppliances-3">
-                                    <input id="amenitiesAndAppliances-3" name="amenitiesAndAppliances" value="BALCONY"
-                                        type="checkbox" class="filled-in" />
-                                    <span>Balcony</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenitiesAndAppliances-4">
-                                    <input id="amenitiesAndAppliances-4" name="amenitiesAndAppliances" value="WIFI"
-                                        type="checkbox" class="filled-in" />
-                                    <span>Wi-Fi</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l6">
                         &nbsp;
                         <div class="input-field">
-                            <select id="furnishing">
-                                <option value="NA" selected>Not Applicable</option>
-                                <option value="FULLY">Fully Furnished</option>
-                                <option value="SEMI">Semi Furnished</option>
-                                <option value="NOT">Not Furnished</option>
+                            <select id="ownerPlaceOfResidence">
+                                <option value="Ernakulam" selected>Ernakulam</option>
+                                <option value="Other District">Other District</option>
+                                <option value="Other State">Other State</option>
+                                <option value="NRI">NRI</option>
                             </select>
-                            <label for="furnishing">Furnisihing :</label>
-                            <span id="span-furnishing" class="helper-text" data-error="Invalid Data"
+                            <label for="ownerPlaceOfResidence">Owner's Place Of Residence :</label>
+                            <span id="span-ownerPlaceOfResidence" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span>
                         </div>
                         &nbsp;
                     </div>
-                    <div class="col s12 m6 l6">
-                        &nbsp;
-                        <div class="input-field">
-                            <select id="rentOrBuy">
-                                <option value="RENT" selected>Rent</option>
-                                <option value="SELL">Sell</option>
-                            </select>
-                            <label for="rentOrBuy">To Rent or Sell ?</label>
-                            <span id="span-rentOrBuy" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span>
-                        </div>
-                        &nbsp;
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="salePrice"
-                                type="text" class="validate"><label for="salePrice">salePrice</label><span
-                                id="span-salePrice" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    <div class="col s12">
+                        <h5>MEDIA LINKS</h5>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksKitchen"
-                                type="text" class="validate"><label
-                                for="photoLinksKitchen">photoLinksKitchen</label><span id="span-photoLinksKitchen"
-                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
+                                type="text" class="validate"><label for="photoLinksKitchen">Kitchen Photo
+                                Links</label><span id="span-photoLinksKitchen" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field
                                 Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksRooms"
-                                type="text" class="validate"><label for="photoLinksRooms">photoLinksRooms</label><span
+                                type="text" class="validate"><label for="photoLinksRooms">Rooms Photo Links</label><span
                                 id="span-photoLinksRooms" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksHall"
-                                type="text" class="validate"><label for="photoLinksHall">photoLinksHall</label><span
+                                type="text" class="validate"><label for="photoLinksHall">Hall Photo Links</label><span
                                 id="span-photoLinksHall" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksOthers"
-                                type="text" class="validate"><label for="photoLinksOthers">photoLinksOthers</label><span
-                                id="span-photoLinksOthers" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                                type="text" class="validate"><label for="photoLinksOthers">Others Photo
+                                Links</label><span id="span-photoLinksOthers" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12">
+                        <h5>OTHER DETAILS</h5>
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="contactDetails"
-                                type="text" class="validate"><label for="contactDetails">contactDetails</label><span
-                                id="span-contactDetails" class="helper-text" data-error="Invalid Data"
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="bedrooms"
+                                type="text" class="validate"><label for="bedrooms">No. of Bedrooms</label><span
+                                id="span-bedrooms" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                 </div>

@@ -102,7 +102,18 @@ const fieldsToSend = {
     "nearByTransitLocations": convertForNearBySchema,
     "nearByHospitals": convertForNearBySchema,
     "nearByUtiliyCenters": convertForNearBySchema,
-    "nearByOtherPlaces": convertForNearBySchema
+    "nearByOtherPlaces": convertForNearBySchema,
+    "maintenanceFee": noChange,
+    "presidentName": noChange,
+    "presidentPhoneNumber": noChange,
+    "secretaryName": noChange,
+    "secretaryPhoneNumber": noChange,
+    "careTakerName": noChange,
+    "careTakerPhoneNumber": noChange,
+    "registeredEmailId": noChange,
+    "registeredPhoneNumber": noChange,
+    "photoLinksInterior": noChange,
+    "photoLinksAmenities": noChange
 };
 
 function readDataToSend() {

@@ -7,7 +7,7 @@
     <title>New Building Page</title>
 
     <!-- CSS  -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -35,35 +35,75 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m12 l12">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="name" type="text"
                                 class="validate"><label for="name">name</label><span id="span-name" class="helper-text"
                                 data-error="Invalid Data" data-success="Valid Data">Enter Field
                                 Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinks"
-                                type="text" class="validate"><label for="photoLinks">photoLinks</label><span
-                                id="span-photoLinks" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="category">
+                                <option value="APARTMENTS" selected>Apartments</option>
+                                <option value="VILLAS">Villas</option>
+                                <option value="FLATS">Flats</option>
+                                <option value="CONDOMINIUM_COMPLEX">Condominium Complex</option>
+                                <option value="TOWNSHIP">Township</option>
+                            </select>
+                            <label for="category">Category :</label>
+                            <span id="span-category" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="videoLinks"
-                                type="text" class="validate"><label for="videoLinks">videoLinks</label><span
-                                id="span-videoLinks" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="class">
+                                <option value="BUDGET" selected>Budget</option>
+                                <option value="PREMIUM">Premium</option>
+                                <option value="LUXURY">Luxury</option>
+                            </select>
+                            <label for="class">Class :</label>
+                            <span id="span-class" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="mainCity"
-                                type="text" class="validate"><label for="mainCity">mainCity</label><span
-                                id="span-mainCity" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="mainCity">
+                                <option value="KOCHI" selected>Kochi</option>
+                            </select>
+                            <label for="mainCity">City :</label>
+                            <span id="span-mainCity" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="region" type="text"
-                                class="validate"><label for="region">region</label><span id="span-region"
-                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
-                                Value Above</span></div>
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="region">
+                                <option value="KAKKANAD" selected>Kakkanad</option>
+                                <option value="EDAPILLY">Edapilly</option>
+                                <option value="THRIPUNITURA">Tripunitura</option>
+                                <option value="KADAVANTARA">Kadavantara</option>
+                                <option value="MARINE DRIVE">Marine Drive</option>
+                                <option value="VYTILLA">Vytilla</option>
+                                <option value="KALOOR">Kaloor</option>
+                                <option value="MARADU">Maradu</option>
+                                <option value="ALUVA">Aluva</option>
+                                <option value="PANAMPALLY">Panampally</option>
+                                <option value="PALARIVATTOM">Palarivattom</option>
+                            </select>
+                            <label for="region">Region :</label>
+                            <span id="span-region" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="locality"
@@ -77,86 +117,8 @@
                                 class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
                                 Value Above</span></div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="description"
-                                type="text" class="validate"><label for="description">description</label><span
-                                id="span-description" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="shortDescription"
-                                type="text" class="validate"><label for="shortDescription">shortDescription</label><span
-                                id="span-shortDescription" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field
-                                Value Above</span></div>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="guidedVisitTiming"
-                                type="text" class="validate"><label
-                                for="guidedVisitTiming">guidedVisitTiming</label><span id="span-guidedVisitTiming"
-                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
-                                Value Above</span></div>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <p>
-                            Amenities Available :-
-                        </p>
-                        <div class="row">
-                            <div class="col s12 m6 l3">
-                                <label for="amenities-1">
-                                    <input id="amenities-1" name="amenities" value="GYM" type="checkbox"
-                                        class="filled-in" />
-                                    <span>GYM</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenities-2">
-                                    <input id="amenities-2" name="amenities" value="LIBRARY" type="checkbox"
-                                        class="filled-in" />
-                                    <span>Library</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenities-3">
-                                    <input id="amenities-3" name="amenities" value="SWIMING POOL" type="checkbox"
-                                        class="filled-in" />
-                                    <span>Swiming Pool</span>
-                                </label>
-                            </div>
-                            <div class="col s12 m6 l3">
-                                <label for="amenities-4">
-                                    <input id="amenities-4" name="amenities" value="POWER BACKUP" type="checkbox"
-                                        class="filled-in" />
-                                    <span>Power BackUp</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m12 l6">
-                        &nbsp;
-                        <div class="input-field">
-                            <select id="status">
-                                <option value="COMPLETED" selected>COMPLETED</option>
-                                <option value="ONGOING">ONGOING</option>
-                            </select>
-                            <label for="status">Project Status :</label>
-                            <span id="span-status" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span>
-                        </div>
-                        &nbsp;
-                    </div>
-                    <div class="col s12 m12 l6">
-                        &nbsp;
-                        <div class="input-field">
-                            <select id="featured">
-                                <option value="NO" selected>NO</option>
-                                <option value="YES">YES</option>
-                            </select>
-                            <label for="featured">Featured Project :</label>
-                            <span id="span-featured" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span>
-                        </div>
-                        &nbsp;
+                    <div class="col s12">
+                        <h5>GENERAL DETAILS</h5>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="yearOfCompletion"
@@ -177,11 +139,18 @@
                                 id="span-noOfUnits" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="area" type="text"
-                                class="validate"><label for="area">area</label><span id="span-area" class="helper-text"
-                                data-error="Invalid Data" data-success="Valid Data">Enter Field
-                                Value Above</span></div>
+                    <div class="col s12 m12 l12">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="status">
+                                <option value="COMPLETED" selected>Completed</option>
+                                <option value="ONGOING">Ongoing</option>
+                            </select>
+                            <label for="status">Project Status :</label>
+                            <span id="span-status" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m12 l12">
                         <p>
@@ -190,38 +159,53 @@
                         <div class="row">
                             <div class="col s12 m6 l3">
                                 <label for="configuration-1">
-                                    <input id="configuration-1" name="configuration" value="2 BHK" type="checkbox"
+                                    <input id="configuration-1" name="configuration" value="1" type="checkbox"
+                                        class="filled-in" />
+                                    <span>1 BHK</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="configuration-2">
+                                    <input id="configuration-2" name="configuration" value="2" type="checkbox"
                                         class="filled-in" />
                                     <span>2 BHK</span>
                                 </label>
                             </div>
                             <div class="col s12 m6 l3">
-                                <label for="configuration-2">
-                                    <input id="configuration-2" name="configuration" value="3 BHK" type="checkbox"
+                                <label for="configuration-3">
+                                    <input id="configuration-3" name="configuration" value="3" type="checkbox"
                                         class="filled-in" />
                                     <span>3 BHK</span>
                                 </label>
                             </div>
                             <div class="col s12 m6 l3">
-                                <label for="configuration-3">
-                                    <input id="configuration-3" name="configuration" value="5 BHK" type="checkbox"
+                                <label for="configuration-4">
+                                    <input id="configuration-4" name="configuration" value="4" type="checkbox"
+                                        class="filled-in" />
+                                    <span>4 BHK</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="configuration-5">
+                                    <input id="configuration-5" name="configuration" value="5" type="checkbox"
                                         class="filled-in" />
                                     <span>5 BHK</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="configuration-6">
+                                    <input id="configuration-6" name="configuration" value="6" type="checkbox"
+                                        class="filled-in" />
+                                    <span>6 BHK</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="class" type="text"
-                                class="validate"><label for="class">class</label><span id="span-class"
-                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="area" type="text"
+                                class="validate"><label for="area">area</label><span id="span-area" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field
                                 Value Above</span></div>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="category"
-                                type="text" class="validate"><label for="category">category</label><span
-                                id="span-category" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="parkingNo"
@@ -229,35 +213,82 @@
                                 id="span-parkingNo" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="parkingType"
-                                type="text" class="validate"><label for="parkingType">parkingType</label><span
-                                id="span-parkingType" class="helper-text" data-error="Invalid Data"
-                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    <div class="col s12">
+                        <h5>PROJECT FACILITIES</h5>
                     </div>
-                    <div class="col s12 m12 l12 nearByPlacesStyle">
+                    <div class="col s12 m12 l12">
                         <p>
-                            Nearby Educational Institues :-
+                            Amenities Available :-
                         </p>
-                        <div class="nearByEducationalInstitutes">
-                            <div class="row">
-                                <div class="input-field col s12 m6 l4">
-                                    <input class="placename" placeholder="Location Name" type="text">
-                                    <label>Location Name</label>
-                                </div>
-                                <div class="input-field col s12 m6 l4">
-                                    <input class="distance" placeholder="Distance" type="text">
-                                    <label>Distance</label>
-                                </div>
-                                <div class="input-field col s12 m6 l4">
-                                    <input class="time" placeholder="Time" type="text">
-                                    <label>Time</label>
-                                </div>
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-1">
+                                    <input id="amenities-1" name="amenities" value="GYM" type="checkbox"
+                                        class="filled-in" />
+                                    <span>GYM</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-2">
+                                    <input id="amenities-2" name="amenities" value="ATM" type="checkbox"
+                                        class="filled-in" />
+                                    <span>ATM</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-3">
+                                    <input id="amenities-3" name="amenities" value="POOL" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Swiming Pool</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-4">
+                                    <input id="amenities-4" name="amenities" value="BACKUP" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Power BackUp</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-5">
+                                    <input id="amenities-5" name="amenities" value="CYCLING" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Cycling</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-6">
+                                    <input id="amenities-6" name="amenities" value="CCTV" type="checkbox"
+                                        class="filled-in" />
+                                    <span>CCTV</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-7">
+                                    <input id="amenities-7" name="amenities" value="CLUB" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Club</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-8">
+                                    <input id="amenities-8" name="amenities" value="COURT" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Court</span>
+                                </label>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <label for="amenities-9">
+                                    <input id="amenities-9" name="amenities" value="GARDEN" type="checkbox"
+                                        class="filled-in" />
+                                    <span>Garden</span>
+                                </label>
                             </div>
                         </div>
-                        <p>
-                            <button onclick="add(this)" type="button"><i class="material-icons prefix">add</i></button>
-                        </p>
+                    </div>
+                    <div class="col s12">
+                        <h5>NEAR BY</h5>
+                        &nbsp;
                     </div>
                     <div class="col s12 m12 l12 nearByPlacesStyle">
                         <p>
@@ -285,9 +316,9 @@
                     </div>
                     <div class="col s12 m12 l12 nearByPlacesStyle">
                         <p>
-                            Nearby Hospitals :-
+                            Nearby Educational Institues :-
                         </p>
-                        <div class="nearByHospitals">
+                        <div class="nearByEducationalInstitutes">
                             <div class="row">
                                 <div class="input-field col s12 m6 l4">
                                     <input class="placename" placeholder="Location Name" type="text">
@@ -333,6 +364,30 @@
                     </div>
                     <div class="col s12 m12 l12 nearByPlacesStyle">
                         <p>
+                            Nearby Hospitals :-
+                        </p>
+                        <div class="nearByHospitals">
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="placename" placeholder="Location Name" type="text">
+                                    <label>Location Name</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="distance" placeholder="Distance" type="text">
+                                    <label>Distance</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input class="time" placeholder="Time" type="text">
+                                    <label>Time</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="add(this)" type="button"><i class="material-icons prefix">add</i></button>
+                        </p>
+                    </div>
+                    <div class="col s12 m12 l12 nearByPlacesStyle">
+                        <p>
                             Nearby Other Places :-
                         </p>
                         <div class="nearByOtherPlaces">
@@ -354,6 +409,140 @@
                         <p>
                             <button onclick="add(this)" type="button"><i class="material-icons prefix">add</i></button>
                         </p>
+                    </div>
+                    <div class="col s12">
+                        <h5>MANAGEMENT DETAILS</h5>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="maintenanceFee"
+                                type="text" class="validate"><label for="maintenanceFee">Maintenance Fee</label><span
+                                id="span-maintenanceFee" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="presidentName"
+                                type="text" class="validate"><label for="presidentName">President's Name</label><span
+                                id="span-presidentName" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="presidentPhoneNumber" type="text" class="validate"><label
+                                for="presidentPhoneNumber">President's Number</label><span
+                                id="span-presidentPhoneNumber" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="secretaryName"
+                                type="text" class="validate"><label for="secretaryName">Secretary's Name</label><span
+                                id="span-secretaryName" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="secretaryPhoneNumber" type="text" class="validate"><label
+                                for="secretaryPhoneNumber">Secretary's Number</label><span
+                                id="span-secretaryPhoneNumber" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="careTakerName"
+                                type="text" class="validate"><label for="careTakerName">Care-taker's Name</label><span
+                                id="span-careTakerName" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="careTakerPhoneNumber" type="text" class="validate"><label
+                                for="careTakerPhoneNumber">Care-taker's Number</label><span
+                                id="span-careTakerPhoneNumber" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12">
+                        <h5>LOGIN INFO</h5>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="registeredEmailId"
+                                type="email" class="validate"><label for="registeredEmailId">Registered
+                                Email-Id</label><span id="span-registeredEmailId" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="registeredPhoneNumber" type="text" class="validate"><label
+                                for="registeredPhoneNumber">Registered Number</label><span
+                                id="span-registeredPhoneNumber" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12">
+                        <h5>MEDIA LINKS</h5>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinks"
+                                type="text" class="validate"><label for="photoLinks">Exterior Photo Links</label><span
+                                id="span-photoLinks" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="photoLinksInterior"
+                                type="text" class="validate"><label for="photoLinksInterior">Interior Photo
+                                Links</label><span id="span-photoLinksInterior" class="helper-text"
+                                data-error="Invalid Data" data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input
+                                id="photoLinksAmenities" type="text" class="validate"><label
+                                for="photoLinksAmenities">Amenities Photo Links</label><span
+                                id="span-photoLinksAmenities" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="videoLinks"
+                                type="text" class="validate"><label for="videoLinks">videoLinks</label><span
+                                id="span-videoLinks" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12">
+                        <h5>OTHER DETAILS</h5>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="description"
+                                type="text" class="validate"><label for="description">description</label><span
+                                id="span-description" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="shortDescription"
+                                type="text" class="validate"><label for="shortDescription">shortDescription</label><span
+                                id="span-shortDescription" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field
+                                Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="guidedVisitTiming"
+                                type="text" class="validate"><label
+                                for="guidedVisitTiming">guidedVisitTiming</label><span id="span-guidedVisitTiming"
+                                class="helper-text" data-error="Invalid Data" data-success="Valid Data">Enter Field
+                                Value Above</span></div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="parkingType"
+                                type="text" class="validate"><label for="parkingType">parkingType</label><span
+                                id="span-parkingType" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="featured">
+                                <option value="NO" selected>NO</option>
+                                <option value="YES">YES</option>
+                            </select>
+                            <label for="featured">Featured Project :</label>
+                            <span id="span-featured" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                 </div>
                 <div class="row">
